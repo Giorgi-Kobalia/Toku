@@ -367,7 +367,7 @@ a {
     }
 
     .card {
-        width: 85%;
+        width: 75%;
         height: 100px;
         display: flex;
         justify-content: space-around;
