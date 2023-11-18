@@ -360,7 +360,7 @@ a {
     }
 
     .chakra {
-        width: 90%;
+        width: 100%;
         height: auto;
         flex-direction: row;
         margin-bottom: 20px;
