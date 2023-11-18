@@ -363,7 +363,7 @@ a {
         width: 90%;
         height: auto;
         flex-direction: row;
-        margin-bottom: 60px;
+        margin-bottom: 20px;
     }
 
     .card {
@@ -415,6 +415,35 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    /*  */
+    .muladhara {
+        background: linear-gradient(-90deg, #eb040c 35%, rgba(250, 0, 10, 0) 100%);
+    }
+
+    .svadhistana {
+        background: linear-gradient(-90deg, #f57200 35%, rgba(250, 0, 10, 0) 100%);
+    }
+
+    .manipura {
+        background: linear-gradient(-90deg, #feb302 35%, rgba(250, 0, 10, 0) 100%);
+    }
+
+    .anahata {
+        background: linear-gradient(-90deg, #02a552 35%, rgba(250, 0, 10, 0) 100%);
+    }
+
+    .vishudha {
+        background: linear-gradient(-90deg, #00adef 35%, rgba(250, 0, 10, 0) 100%);
+    }
+
+    .ajna {
+        background: linear-gradient(-90deg, #2e47a4 35%, rgba(250, 0, 10, 0) 100%);
+    }
+
+    .sahasrara {
+        background: linear-gradient(-90deg, #a4108c 60%, rgba(250, 0, 10, 0) 100%);
     }
 
 }
