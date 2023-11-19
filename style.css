@@ -67,6 +67,10 @@ a {
     border-image-slice: 1;
 }
 
+
+
+/* CHAKRAS */
+
 .all-chakras {
     max-width: 1400px;
     margin-bottom: 80px;
@@ -197,12 +201,17 @@ a {
     font-size: 20px;
 }
 
+/* ELEMENTS */
+
 .element {
     width: 105px;
     height: 105px;
     border-radius: 50%;
     margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
 }
+
 
 .fire {
     border: 2px solid #5d2121;
@@ -220,48 +229,46 @@ a {
     border: 2px solid #357ebc;
 }
 
+.element-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/elements/ball.gif);
+    background-size: 150%;
+    background-position: center;
+    display: none;
+}
+
 .element-link:hover {
 
     scale: 1.2;
 
-    transition: 500ms;
-
     .fire {
-        background-size: 150%;
-        background-position: center;
-        background-image: url(./img/elements/1Kte.gif);
         filter: hue-rotate(220deg);
         border: 0px solid;
     }
 
-
     .earth {
-        background-size: 150%;
-        background-position: center;
-        background-image: url(./img/elements/1Kte.gif);
         filter: hue-rotate(320deg);
         border: 0px solid;
     }
 
     .air {
-        background-size: 150%;
-        background-position: center;
-        background-image: url(./img/elements/1Kte.gif);
         filter: hue-rotate(90deg);
         border: 0px solid;
     }
 
     .water {
-        background-size: 150%;
-        background-position: center;
-        background-image: url(./img/elements/1Kte.gif);
         filter: hue-rotate(40deg);
         border: 0px solid;
     }
 
     .element-img {
-        src: "./img/elements/fire.svg";
         animation: scaleImage 2s infinite linear;
+    }
+
+    .element-bg {
+        display: block;
     }
 
 }
@@ -272,10 +279,19 @@ a {
 }
 
 .element-link {
+    transition: 0.5s;
     margin: 30px;
 }
 
 .elements {
+    margin-bottom: 80px;
+}
+
+
+
+/* WISHES */
+
+.wishes {
     margin-bottom: 80px;
 }
 
@@ -288,20 +304,317 @@ a {
     border: 1px solid #BFAD81;
     color: white;
     margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
 }
 
 .wish:hover {
     scale: 1.1;
     background-color: #BFAD81;
     color: black;
-    transition: 300ms;
-}
-
-.wishes {
-    margin-bottom: 80px;
 }
 
 
+
+
+/* ZODIAC */
+
+.zodiac-signs {
+    margin-bottom: 65px;
+}
+
+.zodiac-header {
+    width: 500px;
+    height: 90px;
+    border: 1px solid #BFAD81;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #BFAD81;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px;
+    font-size: 32px;
+
+    .zodiac-header-bg {
+        position: absolute;
+        background-image: url(./img/zodiac/stars.gif);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0;
+        transition: 1.5s;
+    }
+}
+
+.zodiac-header:hover {
+
+    .zodiac-header-bg {
+        opacity: 0.5;
+    }
+}
+
+
+.zodiac {
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid #BFAD81;
+    color: #BFAD81;
+    margin: 25px 28px;
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+
+
+    .zodiac-img {
+        width: 40%;
+        height: 40%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-bottom: 10px;
+        transition: 0.7s;
+    }
+
+    .Aries {
+        background-image: url(./img/zodiac/base/Aries-base.svg);
+    }
+
+    .Taurus {
+        background-image: url(./img/zodiac/base/Taurus-base.svg);
+    }
+
+    .Gemini {
+        background-image: url(./img/zodiac/base/Gemini-base.svg);
+    }
+
+    .Cancer {
+        background-image: url(./img/zodiac/base/Cancer-base.svg);
+    }
+
+    .Leo {
+        background-image: url(./img/zodiac/base/Leo-base.svg);
+    }
+
+    .Virgo {
+        background-image: url(./img/zodiac/base/Virgo-base.svg);
+    }
+
+    .Libra {
+        background-image: url(./img/zodiac/base/Libra-base.svg);
+    }
+
+    .Scorpius {
+        background-image: url(./img/zodiac/base/Scorpius-base.svg);
+    }
+
+    .Sagittarius {
+        background-image: url(./img/zodiac/base/Sagittarius-base.svg);
+    }
+
+    .Capricornus {
+        background-image: url(./img/zodiac/base/Capricornus-base.svg);
+    }
+
+    .Aquarius {
+        background-image: url(./img/zodiac/base/Aquarius-base.svg);
+    }
+
+    .Pisces {
+        background-image: url(./img/zodiac/base/Pisces-base.svg);
+    }
+}
+
+
+.zodiac:hover {
+    color: black;
+    background-color: #BFAD81;
+    scale: 1.1;
+
+    .Aries {
+        background-image: url(./img/zodiac/black/Aries-black.svg);
+    }
+
+    .Taurus {
+        background-image: url(./img/zodiac/black/Taurus-black.svg);
+    }
+
+    .Gemini {
+        background-image: url(./img/zodiac/black/Gemini-black.svg);
+    }
+
+    .Cancer {
+        background-image: url(./img/zodiac/black/Cancer-black.svg);
+    }
+
+    .Leo {
+        background-image: url(./img/zodiac/black/Leo-black.svg);
+    }
+
+    .Virgo {
+        background-image: url(./img/zodiac/black/Virgo-black.svg);
+    }
+
+    .Libra {
+        background-image: url(./img/zodiac/black/Libra-black.svg);
+    }
+
+    .Scorpius {
+        background-image: url(./img/zodiac/black/Scorpius-black.svg);
+    }
+
+    .Sagittarius {
+        background-image: url(./img/zodiac/black/Sagittarius-black.svg);
+    }
+
+    .Capricornus {
+        background-image: url(./img/zodiac/black/Capricornus-black.svg);
+    }
+
+    .Aquarius {
+        background-image: url(./img/zodiac/black/Aquarius-black.svg);
+    }
+
+    .Pisces {
+        background-image: url(./img/zodiac/black/Pisces-black.svg);
+    }
+
+}
+
+/* planets */
+
+.planets {
+    margin-bottom: 65px;
+}
+
+.planet-header {
+    width: 500px;
+    height: 90px;
+    border: 1px solid #BFAD81;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #BFAD81;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px;
+    font-size: 32px;
+
+    .planet-header-bg {
+        position: absolute;
+        background-image: url(./img/zodiac/stars.gif);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0;
+        transition: 1.5s;
+    }
+}
+
+.planet-header:hover {
+
+    .planet-header-bg {
+        opacity: 0.5;
+    }
+}
+
+.planet {
+
+    width: 150px;
+    height: 230px;
+    color: white;
+    margin: 25px 15px;
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+
+
+    .planet-img {
+        width: 140px;
+        height: 140px;
+        border: 1px solid #BFAD81;
+        border-radius: 50%;
+        background-color: #8D7A42;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: calc(width/2, height/2);
+        margin-bottom: 10px;
+        transition: 0.7s;
+    }
+
+    .Sun {
+        background-image: url(./img/planets/black/Sun-black.svg);
+    }
+
+    .Moon {
+        background-image: url(./img/planets/black/Moon-black.svg);
+    }
+
+    .Mercury {
+        background-image: url(./img/planets/black/Mercury-black.svg);
+    }
+
+    .Venus {
+        background-image: url(./img/planets/black/Venus-black.svg);
+    }
+
+    .Mars {
+        background-image: url(./img/planets/black/Mars-black.svg);
+    }
+
+    .Jupiter {
+        background-image: url(./img/planets/black/Jupiter-black.svg);
+    }
+
+    .Saturn {
+        background-image: url(./img/planets/black/Saturn-black.svg);
+    }
+
+}
+
+.planet:hover {
+    scale: 1.1;
+
+
+    .Sun {
+        background-image: url(./img/planets/base/Sun-base.svg);
+    }
+
+    .Moon {
+        background-image: url(./img/planets/base/Moon-base.svg);
+    }
+
+    .Mercury {
+        background-image: url(./img/planets/base/Mercury-base.svg);
+    }
+
+    .Venus {
+        background-image: url(./img/planets/base/Venus-base.svg);
+    }
+
+    .Mars {
+        background-image: url(./img/planets/base/Mars-base.svg);
+    }
+
+    .Jupiter {
+        background-image: url(./img/planets/base/Jupiter-base.svg);
+    }
+
+    .Saturn {
+        background-image: url(./img/planets/base/Saturn-base.svg);
+    }
+
+}
 
 
 
@@ -360,7 +673,7 @@ a {
     }
 
     .chakra {
-        width: 100%;
+        width: 90%;
         height: auto;
         flex-direction: row;
         margin-bottom: 20px;
@@ -444,6 +757,13 @@ a {
 
     .sahasrara {
         background: linear-gradient(-90deg, #a4108c 60%, rgba(250, 0, 10, 0) 100%);
+    }
+
+    .zodiac {
+        width: 120px;
+        height: 120px;
+        margin: 15px;
+        font-size: 10.5px;
     }
 
 }
