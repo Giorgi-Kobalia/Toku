@@ -1,0 +1,769 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    padding-top: 20px;
+    margin-bottom: 100px;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    border-image: linear-gradient(90deg, #FF0000 0%, #FFB800 20%, #FFF500 40%, #51AF66 60%, #0038FF 80%, #AD00FF 100%);
+    border-image-slice: 1;
+    padding-bottom: 30px;
+    border-left: 2px solid #FF0000;
+    border-right: 2px solid #AD00FF;
+}
+
+.navbar-brand h1 {
+    margin-left: 20px;
+    text-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+    color: #BFAD81;
+}
+
+.navigation-links {
+    display: flex;
+    column-gap: 40px;
+}
+
+.dropdown,
+.dropdown-toggle {
+    color: #BFAD81;
+}
+
+.form-control,
+.form-control:focus,
+.form-control:active {
+    border-radius: 50px;
+    color: #BFAD81;
+    background-color: transparent;
+    border-color: #BFAD81;
+    box-shadow: none;
+}
+
+.form-control::placeholder {
+    color: #BFAD81;
+}
+
+.btn-outline-success,
+.btn-outline-success:hover {
+    background-color: transparent;
+    border-color: #BFAD81;
+    border-radius: 50px;
+    box-shadow: none;
+}
+
+.gradient {
+    border-bottom: 2px solid;
+    border-image: linear-gradient(90deg, #FF0000 0%, #FFB800 20%, #FFF500 40%, #51AF66 60%, #0038FF 80%, #AD00FF 100%);
+    border-image-slice: 1;
+}
+
+
+
+/* CHAKRAS */
+
+.all-chakras {
+    max-width: 1400px;
+    margin-bottom: 80px;
+    padding-bottom: 100px;
+}
+
+.chakra {
+    width: 150px;
+    height: 660px;
+    display: flex;
+    color: white;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.meditation-img {
+    margin-left: -20px;
+}
+
+.chakra:hover {
+
+    scale: 1.08;
+
+    transition: 500ms;
+
+    .charka-img {
+        animation: scaleImage 2s infinite linear;
+    }
+}
+
+@keyframes scaleImage {
+    0% {
+        scale: 1.0;
+
+    }
+
+    50% {
+        scale: 1.20;
+
+    }
+
+    100% {
+        scale: 1.0;
+    }
+}
+
+.card {
+    width: 140px;
+    height: 500px;
+    border: 0px;
+    border-radius: 200px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.muladhara {
+    background: linear-gradient(0deg, #eb040c 35%, rgba(250, 0, 10, 0) 100%);
+}
+
+.muladhara-ball {
+    background-color: #eb040c;
+}
+
+.svadhistana {
+    background: linear-gradient(0deg, #f57200 35%, rgba(250, 0, 10, 0) 100%);
+}
+
+.svadhistana-ball {
+    background-color: #f57200;
+}
+
+.manipura {
+    background: linear-gradient(0deg, #feb302 35%, rgba(250, 0, 10, 0) 100%);
+}
+
+.manipura-ball {
+    background-color: #feb302;
+}
+
+.anahata {
+    background: linear-gradient(0deg, #02a552 35%, rgba(250, 0, 10, 0) 100%);
+}
+
+.anahata-ball {
+    background-color: #02a552;
+}
+
+.vishudha {
+    background: linear-gradient(0deg, #00adef 35%, rgba(250, 0, 10, 0) 100%);
+}
+
+.vishudha-ball {
+    background-color: #00adef;
+}
+
+.ajna {
+    background: linear-gradient(0deg, #2e47a4 35%, rgba(250, 0, 10, 0) 100%);
+}
+
+.ajna-ball {
+    background-color: #2e47a4;
+}
+
+.sahasrara {
+    background: linear-gradient(0deg, #a4108c 60%, rgba(250, 0, 10, 0) 100%);
+}
+
+.sahasrara-ball {
+    background-color: #a4108c;
+}
+
+.card span {
+    font-size: 18px;
+}
+
+.card-ball {
+    width: 140px;
+    height: 140px;
+    margin-top: 25px;
+    border-radius: 50%;
+}
+
+.card-ball span {
+    text-align: center;
+    font-size: 20px;
+}
+
+/* ELEMENTS */
+
+.element {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.fire {
+    border: 2px solid #5d2121;
+}
+
+.earth {
+    border: 2px solid #336500;
+}
+
+.air {
+    border: 2px solid #2d4a90;
+}
+
+.water {
+    border: 2px solid #357ebc;
+}
+
+.element-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/elements/ball.gif);
+    background-size: 150%;
+    background-position: center;
+    display: none;
+}
+
+.element-link:hover {
+
+    scale: 1.2;
+
+    .fire {
+        filter: hue-rotate(220deg);
+        border: 0px solid;
+    }
+
+    .earth {
+        filter: hue-rotate(320deg);
+        border: 0px solid;
+    }
+
+    .air {
+        filter: hue-rotate(90deg);
+        border: 0px solid;
+    }
+
+    .water {
+        filter: hue-rotate(40deg);
+        border: 0px solid;
+    }
+
+    .element-img {
+        animation: scaleImage 2s infinite linear;
+    }
+
+    .element-bg {
+        display: block;
+    }
+
+}
+
+.element-title {
+    color: white;
+    font-size: 16px;
+}
+
+.element-link {
+    transition: 0.5s;
+    margin: 30px;
+}
+
+.elements {
+    margin-bottom: 80px;
+}
+
+
+
+/* WISHES */
+
+.wishes {
+    margin-bottom: 80px;
+}
+
+.wish {
+    width: 185px;
+    height: 55px;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid #BFAD81;
+    color: white;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.wish:hover {
+    scale: 1.1;
+    background-color: #BFAD81;
+    color: black;
+}
+
+
+
+
+/* ZODIAC */
+
+.zodiac-signs {
+    margin-bottom: 65px;
+}
+
+.zodiac-header {
+    width: 500px;
+    height: 90px;
+    border: 1px solid #BFAD81;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #BFAD81;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px;
+    font-size: 32px;
+
+    .zodiac-header-bg {
+        position: absolute;
+        background-image: url(./img/zodiac/stars.gif);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0;
+        transition: 1.5s;
+    }
+}
+
+.zodiac-header:hover {
+
+    .zodiac-header-bg {
+        opacity: 0.5;
+    }
+}
+
+
+.zodiac {
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid #BFAD81;
+    color: #BFAD81;
+    margin: 25px 28px;
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+
+
+    .zodiac-img {
+        width: 40%;
+        height: 40%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-bottom: 10px;
+        transition: 0.7s;
+    }
+
+    .Aries {
+        background-image: url(./img/zodiac/base/Aries-base.svg);
+    }
+
+    .Taurus {
+        background-image: url(./img/zodiac/base/Taurus-base.svg);
+    }
+
+    .Gemini {
+        background-image: url(./img/zodiac/base/Gemini-base.svg);
+    }
+
+    .Cancer {
+        background-image: url(./img/zodiac/base/Cancer-base.svg);
+    }
+
+    .Leo {
+        background-image: url(./img/zodiac/base/Leo-base.svg);
+    }
+
+    .Virgo {
+        background-image: url(./img/zodiac/base/Virgo-base.svg);
+    }
+
+    .Libra {
+        background-image: url(./img/zodiac/base/Libra-base.svg);
+    }
+
+    .Scorpius {
+        background-image: url(./img/zodiac/base/Scorpius-base.svg);
+    }
+
+    .Sagittarius {
+        background-image: url(./img/zodiac/base/Sagittarius-base.svg);
+    }
+
+    .Capricornus {
+        background-image: url(./img/zodiac/base/Capricornus-base.svg);
+    }
+
+    .Aquarius {
+        background-image: url(./img/zodiac/base/Aquarius-base.svg);
+    }
+
+    .Pisces {
+        background-image: url(./img/zodiac/base/Pisces-base.svg);
+    }
+}
+
+
+.zodiac:hover {
+    color: black;
+    background-color: #BFAD81;
+    scale: 1.1;
+
+    .Aries {
+        background-image: url(./img/zodiac/black/Aries-black.svg);
+    }
+
+    .Taurus {
+        background-image: url(./img/zodiac/black/Taurus-black.svg);
+    }
+
+    .Gemini {
+        background-image: url(./img/zodiac/black/Gemini-black.svg);
+    }
+
+    .Cancer {
+        background-image: url(./img/zodiac/black/Cancer-black.svg);
+    }
+
+    .Leo {
+        background-image: url(./img/zodiac/black/Leo-black.svg);
+    }
+
+    .Virgo {
+        background-image: url(./img/zodiac/black/Virgo-black.svg);
+    }
+
+    .Libra {
+        background-image: url(./img/zodiac/black/Libra-black.svg);
+    }
+
+    .Scorpius {
+        background-image: url(./img/zodiac/black/Scorpius-black.svg);
+    }
+
+    .Sagittarius {
+        background-image: url(./img/zodiac/black/Sagittarius-black.svg);
+    }
+
+    .Capricornus {
+        background-image: url(./img/zodiac/black/Capricornus-black.svg);
+    }
+
+    .Aquarius {
+        background-image: url(./img/zodiac/black/Aquarius-black.svg);
+    }
+
+    .Pisces {
+        background-image: url(./img/zodiac/black/Pisces-black.svg);
+    }
+
+}
+
+/* planets */
+
+.planets {
+    margin-bottom: 65px;
+}
+
+.planet-header {
+    width: 500px;
+    height: 90px;
+    border: 1px solid #BFAD81;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #BFAD81;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px;
+    font-size: 32px;
+
+    .planet-header-bg {
+        position: absolute;
+        background-image: url(./img/zodiac/stars.gif);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0;
+        transition: 1.5s;
+    }
+}
+
+.planet-header:hover {
+
+    .planet-header-bg {
+        opacity: 0.5;
+    }
+}
+
+.planet {
+
+    width: 150px;
+    height: 230px;
+    color: white;
+    margin: 25px 15px;
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+
+
+    .planet-img {
+        width: 140px;
+        height: 140px;
+        border: 1px solid #BFAD81;
+        border-radius: 50%;
+        background-color: #8D7A42;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: calc(width/2, height/2);
+        margin-bottom: 10px;
+        transition: 0.7s;
+    }
+
+    .Sun {
+        background-image: url(./img/planets/black/Sun-black.svg);
+    }
+
+    .Moon {
+        background-image: url(./img/planets/black/Moon-black.svg);
+    }
+
+    .Mercury {
+        background-image: url(./img/planets/black/Mercury-black.svg);
+    }
+
+    .Venus {
+        background-image: url(./img/planets/black/Venus-black.svg);
+    }
+
+    .Mars {
+        background-image: url(./img/planets/black/Mars-black.svg);
+    }
+
+    .Jupiter {
+        background-image: url(./img/planets/black/Jupiter-black.svg);
+    }
+
+    .Saturn {
+        background-image: url(./img/planets/black/Saturn-black.svg);
+    }
+
+}
+
+.planet:hover {
+    scale: 1.1;
+
+
+    .Sun {
+        background-image: url(./img/planets/base/Sun-base.svg);
+    }
+
+    .Moon {
+        background-image: url(./img/planets/base/Moon-base.svg);
+    }
+
+    .Mercury {
+        background-image: url(./img/planets/base/Mercury-base.svg);
+    }
+
+    .Venus {
+        background-image: url(./img/planets/base/Venus-base.svg);
+    }
+
+    .Mars {
+        background-image: url(./img/planets/base/Mars-base.svg);
+    }
+
+    .Jupiter {
+        background-image: url(./img/planets/base/Jupiter-base.svg);
+    }
+
+    .Saturn {
+        background-image: url(./img/planets/base/Saturn-base.svg);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+@media (max-width: 1200px) {
+    .all-chakras {
+        flex-direction: column;
+    }
+
+    .chakra {
+        width: 90%;
+        height: auto;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        width: 75%;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .card span {
+        font-size: 16px;
+    }
+
+    .card-ball {
+        width: 100px;
+        height: 100px;
+        margin-top: 0px;
+        margin-left: 10px;
+        border-radius: 50%;
+    }
+
+    .card div {
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-ball span {
+        font-size: 14px;
+    }
+
+    .charka-img {
+        width: 33%;
+        height: 60%;
+    }
+
+    .meditation-img {
+        width: 60px;
+        height: 60px;
+        margin: auto;
+    }
+
+    .chakra-title {
+        width: 33%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*  */
+    .muladhara {
+        background: linear-gradient(-90deg, #eb040c 35%, rgba(250, 0, 10, 0) 100%);
+    }
+
+    .svadhistana {
+        background: linear-gradient(-90deg, #f57200 35%, rgba(250, 0, 10, 0) 100%);
+    }
+
+    .manipura {
+        background: linear-gradient(-90deg, #feb302 35%, rgba(250, 0, 10, 0) 100%);
+    }
+
+    .anahata {
+        background: linear-gradient(-90deg, #02a552 35%, rgba(250, 0, 10, 0) 100%);
+    }
+
+    .vishudha {
+        background: linear-gradient(-90deg, #00adef 35%, rgba(250, 0, 10, 0) 100%);
+    }
+
+    .ajna {
+        background: linear-gradient(-90deg, #2e47a4 35%, rgba(250, 0, 10, 0) 100%);
+    }
+
+    .sahasrara {
+        background: linear-gradient(-90deg, #a4108c 60%, rgba(250, 0, 10, 0) 100%);
+    }
+
+    .zodiac {
+        width: 120px;
+        height: 120px;
+        margin: 15px;
+        font-size: 10.5px;
+    }
+
+}
