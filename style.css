@@ -647,14 +647,19 @@ a {
 
 .swiper {
   max-width: 1400px;
+  min-width: 500px;
   height: 400px;
+  margin-top: 20px;
   margin-bottom: 60px;
 }
 
 .swiper-slide {
-  margin-top: 20px;
-  width: 100px;
-  height: 350px;
+  width: 300px;
+  max-height: 400px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .swiper-button {

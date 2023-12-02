@@ -3,15 +3,15 @@ var swiper = new Swiper(".mySwiper", {
 
   breakpoints: {
 
-    200: {
+    150: {
       loop: true,
       grabCursor: true,
       centeredSlides: true,
-      slidesPerView: "1",
+      slidesPerView: "2",
 
       coverflowEffect: {
         rotate: 0,
-        stretch: -10,
+        stretch: 100,
         depth: 50,
         modifier: 1,
         scale: 0.85 ,
