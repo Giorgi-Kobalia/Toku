@@ -2,8 +2,7 @@ var swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
 
   breakpoints: {
-
-    150: {
+    100: {
       loop: true,
       grabCursor: true,
       centeredSlides: true,
@@ -14,12 +13,7 @@ var swiper = new Swiper(".mySwiper", {
         stretch: 100,
         depth: 50,
         modifier: 1,
-        scale: 0.85 ,
-      },
-
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        scale: 0.78,
       },
 
       autoplay: {
@@ -27,7 +21,26 @@ var swiper = new Swiper(".mySwiper", {
       },
     },
 
-    600: {
+    550: {
+      loop: true,
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "2",
+
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 130,
+        depth: 50,
+        modifier: 1,
+        scale: 0.8,
+      },
+
+      autoplay: {
+        delay: 5000,
+      },
+    },
+
+    700: {
       loop: true,
       grabCursor: true,
       centeredSlides: true,
@@ -38,12 +51,7 @@ var swiper = new Swiper(".mySwiper", {
         stretch: -10,
         depth: 50,
         modifier: 1,
-        scale: 0.85 ,
-      },
-
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        scale: 0.85,
       },
 
       autoplay: {
@@ -51,7 +59,26 @@ var swiper = new Swiper(".mySwiper", {
       },
     },
 
-    960: {
+    910: {
+      loop: true,
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "4",
+
+      coverflowEffect: {
+        rotate: 0,
+        stretch: -10,
+        depth: 50,
+        modifier: 1,
+        scale: 0.85,
+      },
+
+      autoplay: {
+        delay: 5000,
+      },
+    },
+
+    1121: {
       loop: true,
       grabCursor: true,
       centeredSlides: true,
@@ -59,15 +86,10 @@ var swiper = new Swiper(".mySwiper", {
 
       coverflowEffect: {
         rotate: 0,
-        stretch: -10,
+        stretch: -30,
         depth: 50,
         modifier: 1,
-        scale: 0.85 ,
-      },
-
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        scale: 0.85,
       },
 
       autoplay: {
