@@ -902,7 +902,7 @@ a {
   }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 750px) {
   .blog-description p {
     display: none;
   }
