@@ -663,7 +663,7 @@ a {
 
 .swiper {
   max-width: 1400px;
-  min-width: 430px;
+  min-width: 400px;
   height: 400px;
   margin-top: 20px;
   display: flex;
