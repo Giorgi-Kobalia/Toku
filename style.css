@@ -41,7 +41,7 @@ a {
 .navbar {
   margin-top: 5px;
   margin-bottom: 50px;
-  padding-top: 10px;
+  padding-top: 20px;
   border-bottom: 2px solid black;
   border-top: 2px solid black;
   border-image: linear-gradient(
@@ -214,6 +214,7 @@ a {
   height: 140px;
   margin-top: 25px;
   border-radius: 50%;
+  display: flex;
 }
 
 .card-ball span {
@@ -353,7 +354,7 @@ a {
   background-color: transparent;
   border: 1px solid #bfad81;
   color: white;
-  margin: 10px;
+  margin-bottom: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -384,7 +385,7 @@ a {
   position: relative;
   overflow: hidden;
   margin-bottom: 50px;
-  font-size: 32px;
+  font-size: 25px;
 }
 
 .zodiac-header-bg {
@@ -547,7 +548,7 @@ a {
   position: relative;
   overflow: hidden;
   margin-bottom: 50px;
-  font-size: 32px;
+  font-size: 25px;
 }
 
 .planet-header-bg {
@@ -663,7 +664,7 @@ a {
 
 .swiper {
   max-width: 1400px;
-  min-width: 400px;
+  min-width: 375px;
   height: 400px;
   margin-top: 20px;
   display: flex;
@@ -771,7 +772,7 @@ a {
   }
 
   .card {
-    width: 75%;
+    width: 100%;
     height: 100px;
     display: flex;
     justify-content: space-around;
@@ -784,11 +785,7 @@ a {
   }
 
   .card-ball {
-    width: 100px;
-    height: 100px;
-    margin-top: 0px;
-    margin-left: 10px;
-    border-radius: 50%;
+    display: none;
   }
 
   .card div {
@@ -852,6 +849,10 @@ a {
 
   /*  */
 
+  .element-link {
+    margin: 20px;
+  }
+
   .element-bg {
     opacity: 1;
   }
@@ -880,6 +881,11 @@ a {
     margin-bottom: 40px;
   }
 
+  .wish {
+    width: 155px;
+    margin: 5;
+  }
+
   /*  */
 
   .zodiac {
@@ -898,7 +904,7 @@ a {
   }
 
   .planet {
-    margin: 5px 20px;
+    margin: 5px 10px;
   }
 }
 
@@ -914,7 +920,7 @@ a {
   }
 
   .blog-description h2 {
-    font-size: 40px;
+    font-size: 30px;
     padding: 20px;
     width: max-content;
     border: 1px solid;
@@ -923,7 +929,7 @@ a {
   }
 
   .blog-description h4 {
-    font-size: 35px;
+    font-size: 25px;
     padding: 20px;
     width: max-content;
     border: 1px solid;

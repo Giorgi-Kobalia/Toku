@@ -10,10 +10,10 @@ var swiper = new Swiper(".mySwiper", {
 
       coverflowEffect: {
         rotate: 0,
-        stretch: 100,
+        stretch: 81,
         depth: 40,
         modifier: 1,
-        scale: 0.78,
+        scale: 0.9,
       },
 
       autoplay: {
