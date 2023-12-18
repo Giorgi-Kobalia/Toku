@@ -60,7 +60,7 @@ a {
   position: relative;
   overflow: hidden;
 
-  .navbar-brand h1 {
+  .nav-title {
     margin-left: 20px;
     text-wrap: wrap;
     display: flex;
@@ -99,6 +99,13 @@ a {
     background-color: transparent;
     border-color: #bfad81;
     border-radius: 50px;
+    box-shadow: none;
+  }
+
+  .navbar-toggler {
+    border: 0px transparent;
+  }
+  .navbar-toggler:focus {
     box-shadow: none;
   }
 }
@@ -212,7 +219,6 @@ a {
 .card-ball {
   width: 140px;
   height: 140px;
-  margin-top: 25px;
   border-radius: 50%;
   display: flex;
 }
@@ -751,194 +757,3 @@ a {
   box-orient: vertical;
 }
 
-/*  */
-
-@media (max-width: 1200px) {
-  .navbar {
-    margin-top: 5px;
-    margin-bottom: 40px;
-  }
-
-  .all-chakras {
-    flex-direction: column-reverse;
-    padding-bottom: 30px;
-  }
-
-  .chakra {
-    width: 90%;
-    height: auto;
-    flex-direction: row;
-    margin-bottom: 20px;
-  }
-
-  .card {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-  }
-
-  .card span {
-    font-size: 16px;
-  }
-
-  .card-ball {
-    display: none;
-  }
-
-  .card div {
-    width: 33%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .card-ball span {
-    font-size: 14px;
-  }
-
-  .charka-img {
-    width: 33%;
-    height: 60%;
-  }
-
-  .meditation-img {
-    width: 60px;
-    height: 60px;
-    margin: auto;
-  }
-
-  .chakra-title {
-    width: 33%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /*  */
-  .muladhara {
-    background: linear-gradient(-90deg, #eb040c 35%, rgba(250, 0, 10, 0) 100%);
-  }
-
-  .svadhistana {
-    background: linear-gradient(-90deg, #f57200 35%, rgba(250, 0, 10, 0) 100%);
-  }
-
-  .manipura {
-    background: linear-gradient(-90deg, #feb302 35%, rgba(250, 0, 10, 0) 100%);
-  }
-
-  .anahata {
-    background: linear-gradient(-90deg, #02a552 35%, rgba(250, 0, 10, 0) 100%);
-  }
-
-  .vishudha {
-    background: linear-gradient(-90deg, #00adef 35%, rgba(250, 0, 10, 0) 100%);
-  }
-
-  .ajna {
-    background: linear-gradient(-90deg, #2e47a4 35%, rgba(250, 0, 10, 0) 100%);
-  }
-
-  .sahasrara {
-    background: linear-gradient(-90deg, #a4108c 60%, rgba(250, 0, 10, 0) 100%);
-  }
-
-  /*  */
-
-  .element-link {
-    margin: 20px;
-  }
-
-  .element-bg {
-    opacity: 1;
-  }
-
-  .fire {
-    filter: hue-rotate(220deg);
-    border: 0px solid;
-  }
-
-  .earth {
-    filter: hue-rotate(320deg);
-    border: 0px solid;
-  }
-
-  .air {
-    filter: hue-rotate(90deg);
-    border: 0px solid;
-  }
-
-  .water {
-    filter: hue-rotate(40deg);
-    border: 0px solid;
-  }
-
-  .elements {
-    margin-bottom: 40px;
-  }
-
-  .wish {
-    width: 155px;
-    margin: 5;
-  }
-
-  /*  */
-
-  .zodiac {
-    width: 120px;
-    height: 120px;
-    margin: 15px 10px;
-    font-size: 10.5px;
-  }
-
-  .zodiac-header-bg {
-    opacity: 0.5;
-  }
-
-  .planet-header-bg {
-    opacity: 0.5;
-  }
-
-  .planet {
-    margin: 5px 10px;
-  }
-}
-
-@media (max-width: 750px) {
-  .blog-description p {
-    display: none;
-  }
-
-  .blog-description {
-    position: absolute;
-    width: 100%;
-    height: 40%;
-  }
-
-  .blog-description h2 {
-    font-size: 30px;
-    padding: 20px;
-    width: max-content;
-    border: 1px solid;
-    border-radius: 50px;
-    background: rgba(0, 0, 0, 0.7);
-  }
-
-  .blog-description h4 {
-    font-size: 25px;
-    padding: 20px;
-    width: max-content;
-    border: 1px solid;
-    border-radius: 50px;
-    background: rgba(0, 0, 0, 0.7);
-  }
-
-  .blog-img {
-    width: 100%;
-    position: relative;
-  }
-}
