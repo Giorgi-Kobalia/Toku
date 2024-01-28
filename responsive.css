@@ -165,10 +165,6 @@
   .planet-header-bg {
     opacity: 0.5;
   }
-
-  .planet {
-    margin: 5px 10px;
-  }
 }
 
 /* WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW */
@@ -212,8 +208,29 @@
     background: rgba(0, 0, 0, 0.7); */
   }
 
+  .blog-header {
+    font-size: 40px;
+  }
+
   .blog-img {
     width: 100%;
     position: relative;
+  }
+  .planet-img {
+    width: 100px;
+    height: 100px;
+  }
+  .planet {
+    width: 100px;
+    margin: 8px;
+  }
+  .planet-title {
+    font-size: smaller;
+  }
+  .zodiac {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    font-size: 10.5px;
   }
 }
