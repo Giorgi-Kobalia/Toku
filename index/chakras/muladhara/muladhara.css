@@ -1,0 +1,224 @@
+.content{
+    width:100%;
+    max-width: 1266px;
+    margin:0 auto;
+    padding:0 20px;
+    @media (min-width: 1201px) {
+        .card{
+            width:200px;
+            height:746px;
+        }
+        .charka-img{
+            width:151p;
+            height:143px;
+        }
+        .meditation-img{
+            width:280px;
+            height:206px;
+            margin:0 -140px;
+        }
+    }
+    @media (max-width:1200px) {
+        .muladhara{
+            border-radius: 200px 200px 0px 0px;
+        }
+    }
+    @media (max-width:620px) {
+        .element-link {
+            margin-top:50px!important;
+        }
+    }
+    
+}
+.content__body{
+    width:100;
+    display: flex;
+    gap:33px;
+    @media (max-width: 1201px) {
+        flex-direction: column;
+    }
+}
+.content__img{
+    width: 360px;
+    display: flex;
+    @media (max-width: 1201px) {
+        width:100%;
+    }
+}
+.content__info{
+    width:100%;
+}
+.content__title{
+    font-size:64px;
+    color:#ED000A;
+    line-height: 76.8px;
+    margin-bottom: 45px;
+    @media (max-width:780px) {
+        font-size:40px;
+        line-height: 56.8px;
+        margin-bottom: 25px;
+    }
+
+}
+.content__subtitle{
+    font-size:40px;
+    line-height: 48px;
+    color:#BFAD81;
+    margin-bottom: 45px;
+    @media (max-width:780px) {
+        font-size:24px;
+        line-height: 36.8px;
+        margin-bottom: 25px;
+    }
+}
+.content__desc{
+    font-size:20px;
+    color:#C4C4C4;
+    line-height: 27px;
+    margin-bottom: 18px;
+    @media (max-width:780px) {
+        font-size:18px;
+        line-height: 26.8px;
+        margin-bottom: 18px;
+    }
+}
+.content__tags{
+    display: flex;
+    width:100%;
+    gap: 55px;
+    margin-top:60px;
+    @media (max-width:620px) {
+        flex-direction: column;
+        gap:20px;
+    }
+}
+.content__tag{
+    font-size:20px;
+    line-height: 24px;
+    color:#C4C4C4;
+    border: 1px solid #C4C4C4;
+    width:185px;
+    height:56px;
+    border-radius:32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    @media (max-width:620px) {
+        width:100%;
+    }
+}
+.content__element{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:0;
+    margin-top:-20px;
+    margin-bottom:48px;
+    
+}
+.content__element-circle{
+    width:88px;
+    height:88px;
+    border-radius:50%;
+    background:#00AA30;
+}
+.content__element-name{
+    font-size:20px;
+    line-height: 24px;
+    color:#C4C4C4;
+    margin-top: 12px;
+}
+.content__additional{
+    display: flex;
+    align-items: center;
+    margin-top: 45px;
+    width:100%;
+    gap:33px;
+    @media (max-width:780px) {
+        flex-direction: column;
+    }
+}
+.content__additional-video{
+    width:360px;
+    iframe{
+        width:100%;
+        height:100%;
+        border:2px solid #fff;
+        border-radius: 5px;
+    }
+    @media (max-width:780px) {
+        width: 100%;
+        height:400px;
+    }
+    @media (max-width:725px) {
+        height:250px;
+    }
+    @media (max-width:436px) {
+        height:150px;
+    }
+}
+.content__additional-info{
+    width:100%;
+}
+
+.element {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    margin-top:-50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.element-title {
+    color: white;
+    font-size: 16px;
+}
+.element-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/elements/ball.gif);
+    background-size: 150%;
+    background-position: center;
+    opacity: 0;
+    z-index: -1;
+}
+  
+.element-link {
+    transition: 0.5s;
+    margin: 30px;
+}
+
+.element-link:hover {
+    scale: 1.2;
+    .fire {
+        filter: hue-rotate(220deg);
+        border: 0px solid;
+    }
+
+    .earth {
+        filter: hue-rotate(320deg);
+        border: 0px solid;
+    }
+
+    .air {
+        filter: hue-rotate(90deg);
+        border: 0px solid;
+    }
+
+    .water {
+        filter: hue-rotate(40deg);
+        border: 0px solid;
+    }
+
+    .element-img {
+        animation: scaleImage 2s infinite linear;
+    }
+
+    .element-bg {
+        opacity: 1;
+    }
+}
