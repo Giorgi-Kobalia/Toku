@@ -671,7 +671,8 @@ a {
 
 .swiper {
   max-width: 1400px;
-  min-width: 320px;
+  min-width: 200px;
+
   height: 400px;
   margin-top: 50px;
   display: flex;
@@ -681,7 +682,7 @@ a {
 
 .swiper-header-gradient {
   max-width: 700px;
-  min-width: 320px;
+  min-width: 200px;
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -732,7 +733,7 @@ a {
 }
 
 .c2 {
-  background-image: url(./img/logo_nav.svg);
+  background-image: url(./img/nav/logo_nav.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -745,70 +746,6 @@ a {
   color: #bfad81;
   width: 100%;
   height: 50%;
-}
-
-/* BLOG */
-
-.blog-header {
-  color: #8d7a42;
-  font-size: 64px;
-  margin-bottom: 80px;
-  margin-top: 50px;
-  text-align: center;
-}
-
-.blog-post {
-  border: 1px solid #8d7a42;
-  border-radius: 35px;
-  margin-bottom: 50px;
-  padding: 30px;
-  overflow: hidden;
-  height: 500px;
-  padding: 0px;
-}
-
-.blog-img {
-  width: 55%;
-  height: 100%;
-  background-image: url(./img/blog/blog\ 1.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.blog-description {
-  width: 45%;
-  height: 100%;
-  padding-left: 20px;
-  color: #8d7a42;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  display: flex;
-}
-
-.blog-description p {
-  font-size: 20px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -moz-box;
-  -moz-box-orient: vertical;
-  display: -webkit-box;
-  -webkit-line-clamp: 10;
-  -webkit-box-orient: vertical;
-  line-clamp: 3;
-  box-orient: vertical;
-}
-
-.blog-more {
-  background-color: transparent;
-  border: 1px solid #8d7a42;
-  border-radius: 20px;
-  font-size: 25px;
-  color: #8d7a42;
-  width: 300px;
-  height: 50px;
-  margin-bottom: 60px;
 }
 
 /* firday Night */
@@ -905,7 +842,7 @@ a {
 
 .footer-logo {
   height: 330px;
-  background-image: url(./img/footer_logo.png);
+  background-image: url(./img/footer/footer_logo.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -958,7 +895,7 @@ a {
 .footer-map {
   width: 100%;
   height: 330px;
-  background-image: url(./img/footer_map.png);
+  background-image: url(./img/footer/footer_map.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

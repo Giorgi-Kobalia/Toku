@@ -6,11 +6,11 @@ var swiper = new Swiper(".mySwiper", {
       loop: true,
       grabCursor: true,
       centeredSlides: true,
-      slidesPerView: "2",
+      slidesPerView: "1",
 
       coverflowEffect: {
-        rotate: 0,
-        stretch: 81,
+        rotate: 40,
+        stretch: 10,
         depth: 40,
         modifier: 1,
         scale: 0.9,
