@@ -6,7 +6,7 @@
   @media (min-width: 1201px) {
     .card {
       width: 200px;
-      height: 900px;
+      height: 680px;
     }
     .charka-img {
       width: 151px;
@@ -97,20 +97,7 @@
   }
 }
 .content__tag {
-  font-size: 20px;
-  line-height: 24px;
-  color: #c4c4c4;
-  border: 1px solid #c4c4c4;
-  width: 185px;
-  height: 56px;
-  border-radius: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0;
-  @media (max-width: 620px) {
-    width: 100%;
-  }
 }
 .content__element {
   display: flex;
