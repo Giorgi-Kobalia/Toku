@@ -167,11 +167,9 @@
   }
 }
 
-/* WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW */
-
 @media (max-width: 1000px) {
   .swiper-header {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   .planet-img {

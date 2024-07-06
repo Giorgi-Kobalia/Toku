@@ -86,8 +86,10 @@
     margin-bottom: 18px;
   }
 }
+
 .content__tags {
   display: flex;
+  justify-content: center;
   width: 100%;
   gap: 55px;
   margin-top: 60px;
@@ -129,6 +131,7 @@
     flex-direction: column-reverse;
   }
 }
+
 .content__additional-video {
   width: 360px;
   iframe {
@@ -179,7 +182,7 @@
 
 .element-link {
   transition: 0.5s;
-  margin: 30px;
+  margin: 50px;
 }
 
 .element-link:hover {
