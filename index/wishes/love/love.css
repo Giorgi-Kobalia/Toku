@@ -40,6 +40,8 @@
   margin-bottom: 20px;
   text-align: start;
   width: 100%;
+  text-align: center;
+
 }
 
 .wishes-right-box-text {
@@ -48,6 +50,7 @@
   text-align: start;
   width: 100%;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 @media (max-width: 1000px) {

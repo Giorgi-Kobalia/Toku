@@ -1,304 +1,304 @@
 .intro {
-    min-width: 320px;
-    max-width: 1300px;
-    margin-bottom: 50px;
-    margin-top: 80px;
-    display: flex;
-    justify-content: space-between;
+  min-width: 320px;
+  max-width: 1300px;
+  margin-bottom: 50px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.elements-left-box {
+  margin-top: 70px;
+  width: 320px;
+  max-height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.elements-right-box-title {
+  width: 100%;
+  text-align: center;
+  font-size: 64px;
+  color: skyblue;
+  line-height: 76.8px;
+  margin-bottom: 45px;
+  @media (max-width: 780px) {
+    font-size: 40px;
+    line-height: 56.8px;
+    margin-bottom: 25px;
   }
-  
-  .elements-left-box {
-    margin-top: 70px;
-    width: 320px;
-    max-height: 800px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+}
+
+.elements-left-ball {
+  width: 200px;
+  height: 200px;
+  background-color: skyblue;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.elements-left-ball-symbol {
+  width: 40%;
+  height: 40%;
+  background-image: url(../../../img/elements/air.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 10px;
+}
+
+.content__title {
+  width: 100%;
+  text-align: center;
+  font-size: 64px;
+  color: #ed000a;
+  line-height: 76.8px;
+  margin-bottom: 45px;
+  @media (max-width: 780px) {
+    font-size: 40px;
+    line-height: 56.8px;
+    margin-bottom: 25px;
+  }
+}
+
+.content__tags {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 55px;
+  margin: 60px auto;
+  @media (max-width: 620px) {
     flex-direction: column;
+    gap: 20px;
   }
-  
-  .elements-right-box-title {
-    width: 100%;
-    text-align: center;
-    font-size: 64px;
-    color: skyblue;
-    line-height: 76.8px;
-    margin-bottom: 45px;
-    @media (max-width: 780px) {
-      font-size: 40px;
-      line-height: 56.8px;
-      margin-bottom: 25px;
-    }
-  }
-  
-  .elements-left-ball {
-    width: 200px;
-    height: 200px;
-    background-color: skyblue;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .elements-left-ball-symbol {
-    width: 40%;
-    height: 40%;
-    background-image: url(../../../img/elements/air.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-bottom: 10px;
-  }
-  
-  .content__title {
-    width: 100%;
-    text-align: center;
-    font-size: 64px;
-    color: #ed000a;
-    line-height: 76.8px;
-    margin-bottom: 45px;
-    @media (max-width: 780px) {
-      font-size: 40px;
-      line-height: 56.8px;
-      margin-bottom: 25px;
-    }
-  }
-  
-  .content__tags {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    gap: 55px;
-    margin: 60px auto;
-    @media (max-width: 620px) {
-      flex-direction: column;
-      gap: 20px;
-    }
-  }
-  
-  .content__additional-video {
-    width: 100%;
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: 2px solid #fff;
-      border-radius: 5px;
-    }
-    @media (max-width: 780px) {
-      width: 100%;
-      height: 400px;
-    }
-    @media (max-width: 725px) {
-      height: 250px;
-    }
-    @media (max-width: 436px) {
-      height: 150px;
-    }
-  }
-  
-  .elements-left-box-video {
-    margin-bottom: 40px;
-  }
-  
-  .elements-right-box {
-    max-width: 800px;
-    min-height: 700px;
-  }
-  
-  .elements-right-box-header {
-    width: 100%;
-    text-align: center;
-    color: #8d7a42;
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-align: start;
-    width: 100%;
-  }
-  
-  .element {
-    width: 105px;
-    height: 105px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    margin-top: -50px;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .element-title {
-    color: white;
-    font-size: 16px;
-  }
-  .element-bg {
-    position: absolute;
+}
+
+.content__additional-video {
+  width: 100%;
+  iframe {
     width: 100%;
     height: 100%;
-    background-image: url(../../../img/elements/ball.gif);
-    background-size: 150%;
-    background-position: center;
-    opacity: 0;
-    z-index: -1;
+    border: 2px solid #fff;
+    border-radius: 5px;
   }
-  
-  .element-link {
-    transition: 0.5s;
-    margin: 50px;
-  }
-  
-  .element-link:hover {
-    scale: 1.2;
-  
-    .fire {
-      filter: hue-rotate(220deg);
-      border: 0px solid;
-    }
-  
-    .earth {
-      filter: hue-rotate(320deg);
-      border: 0px solid;
-    }
-  
-    .air {
-      filter: hue-rotate(90deg);
-      border: 0px solid;
-    }
-  
-    .water {
-      filter: hue-rotate(40deg);
-      border: 0px solid;
-    }
-  
-    .element-img {
-      animation: scaleImage 2s infinite linear;
-    }
-  
-    .element-bg {
-      opacity: 1;
-    }
-  }
-  
-  .elements-right-box-text {
-    color: white;
-    font-size: 18px;
-    text-align: start;
+  @media (max-width: 780px) {
     width: 100%;
-    margin-bottom: 20px;
+    height: 400px;
   }
-  
-  .zodiac {
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    border: 1px solid #bfad81;
-    margin: 40px auto;
-    color: #bfad81;
-    transition: 0.7s;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  @media (max-width: 725px) {
+    height: 250px;
   }
-  
-  .zodiac-img {
-    width: 30%;
-    height: 30%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-top: 10px;
-    transition: 0.7s;
+  @media (max-width: 436px) {
+    height: 150px;
   }
-  
-  .zodiac-title {
-    font-size: 12px;
+}
+
+.elements-left-box-video {
+  margin-bottom: 40px;
+}
+
+.elements-right-box {
+  max-width: 800px;
+  min-height: 700px;
+}
+
+.elements-right-box-header {
+  width: 100%;
+  text-align: center;
+  color: #8d7a42;
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: start;
+  width: 100%;
+}
+
+.element {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  margin-top: -50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.element-title {
+  color: white;
+  font-size: 16px;
+}
+.element-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../img/elements/ball.gif);
+  background-size: 150%;
+  background-position: center;
+  opacity: 0;
+  z-index: -1;
+}
+
+.element-link {
+  transition: 0.5s;
+  margin: 50px;
+}
+
+.element-link:hover {
+  scale: 1.2;
+
+  .fire {
+    filter: hue-rotate(220deg);
+    border: 0px solid;
   }
-  
-  .planet {
-    width: 90px;
-    height: 160px;
-    color: #bfad81;
-    margin: 25px 10px;
-    display: flex;
-    font-size: 24px;
-    justify-content: center;
-    align-items: center;
-    transition: 0.7s;
+
+  .earth {
+    filter: hue-rotate(320deg);
+    border: 0px solid;
   }
-  
-  .planet-img {
-    width: 90px;
-    height: 90px;
-    border: 1px solid #bfad81;
-    background-color: #8d7a42;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: calc(width/2, height/2);
-    margin-bottom: 20px;
-    transition: 0.7s;
+
+  .air {
+    filter: hue-rotate(90deg);
+    border: 0px solid;
   }
-  
-  .small-chakra {
-    width: 90px;
-    height: 160px;
-    color: #feb302;
-    margin: 25px 10px;
-    display: flex;
-    font-size: 24px;
-    justify-content: center;
-    align-items: center;
-    transition: 0.7s;
+
+  .water {
+    filter: hue-rotate(40deg);
+    border: 0px solid;
   }
-  .small-chakra:hover {
-    scale: 1.1;
+
+  .element-img {
+    animation: scaleImage 2s infinite linear;
   }
-  .small-chakra-title {
-    width: 100%;
-    font-size: 20px;
+
+  .element-bg {
+    opacity: 1;
   }
-  
-  .small-chakra-ball {
-    width: 90px;
-    height: 90px;
-    background-color: #feb302;
-    border-radius: 50%;
-    border: 1px solid #feb302;
-    margin-bottom: 20px;
-    transition: 0.7s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.7s;
+}
+
+.elements-right-box-text {
+  color: white;
+  font-size: 18px;
+  text-align: start;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.zodiac {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 1px solid #bfad81;
+  margin: 40px auto;
+  color: #bfad81;
+  transition: 0.7s;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zodiac-img {
+  width: 30%;
+  height: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 10px;
+  transition: 0.7s;
+}
+
+.zodiac-title {
+  font-size: 12px;
+}
+
+.planet {
+  width: 90px;
+  height: 160px;
+  color: #bfad81;
+  margin: 25px 10px;
+  display: flex;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s;
+}
+
+.planet-img {
+  width: 90px;
+  height: 90px;
+  border: 1px solid #bfad81;
+  background-color: #8d7a42;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: calc(width/2, height/2);
+  margin-bottom: 20px;
+  transition: 0.7s;
+}
+
+.small-chakra {
+  width: 90px;
+  height: 160px;
+  color: #feb302;
+  margin: 25px 10px;
+  display: flex;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s;
+}
+.small-chakra:hover {
+  scale: 1.1;
+}
+.small-chakra-title {
+  width: 100%;
+  font-size: 20px;
+}
+
+.small-chakra-ball {
+  width: 90px;
+  height: 90px;
+  background-color: #feb302;
+  border-radius: 50%;
+  border: 1px solid #feb302;
+  margin-bottom: 20px;
+  transition: 0.7s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s;
+}
+
+.small-chakra-img {
+  width: 70px;
+  height: 70px;
+  background-image: url(../../../img/chakras/manipura_symbol.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.7s;
+}
+.test {
+  width: 500px;
+}
+
+@media (max-width: 1000px) {
+  .intro {
+    flex-direction: column-reverse;
   }
-  
-  .small-chakra-img {
-    width: 70px;
-    height: 70px;
-    background-image: url(../../../img/chakras/manipura_symbol.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: 0.7s;
+  .elements-left-ball {
+    display: none;
   }
-  .test {
-    width: 500px;
+  .element-bg {
+    opacity: 1;
   }
-  
-  @media (max-width: 1000px) {
-    .intro {
-      flex-direction: column-reverse;
-    }
-    .elements-left-ball {
-      display: none;
-    }
-    .element-bg {
-      opacity: 1;
-    }
+}
+@media (max-width: 1200px) {
+  .element-bg {
+    opacity: 1;
   }
-  @media (max-width: 1200px) {
-    .element-bg {
-      opacity: 1;
-    }
-  }
-  
+}

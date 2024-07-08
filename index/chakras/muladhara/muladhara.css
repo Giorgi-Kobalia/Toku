@@ -3,6 +3,7 @@
   max-width: 1266px;
   margin: 0 auto;
   padding: 0 20px;
+  text-align: center;
   @media (min-width: 1201px) {
     .card {
       width: 200px;
