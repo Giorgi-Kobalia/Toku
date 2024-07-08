@@ -44,6 +44,11 @@
 
 }
 
+.main{
+  font-size: 50px;
+  font-weight: 700;
+}
+
 .wishes-right-box-text {
   color: white;
   font-size: 18px;
@@ -69,5 +74,8 @@
   }
   .wishes-left-box-planet {
     display: none;
+  }
+  .main{
+    font-size: 34px;
   }
 }

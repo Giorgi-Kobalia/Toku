@@ -41,7 +41,11 @@
   text-align: start;
   width: 100%;
   text-align: center;
+}
 
+.main {
+  font-size: 50px;
+  font-weight: 700;
 }
 
 .wishes-right-box-text {
@@ -69,5 +73,8 @@
   }
   .wishes-left-box-planet {
     display: none;
+  }
+  .main{
+    font-size: 34px;
   }
 }
