@@ -812,6 +812,55 @@ a {
   background-repeat: no-repeat;
 }
 
+@media (max-width:1300px){
+  .friday-night-img{
+    width: 100%;
+    height:initial;
+    display: flex;
+  }
+  .friday-night{
+    width:100%;
+  }
+  .friday-night-img{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(160px,1fr));
+    gap:5px;
+  }
+  .friday-night-img-normal,.friday-night-img-big{
+    margin:0;
+    width:100%;
+    height:320px;
+    flex-shrink: 0;
+  }
+  .friday-night-textbox{
+    width:100%;
+    margin-top: 25px;
+    height:initial;
+  }
+}
+@media (max-width:900px){
+  .friday-night{
+    flex-direction: column;
+  }
+  .friday-night-img{
+    width:100%;
+    display: flex;
+    overflow-x: auto;
+    padding-bottom:20px;
+  }
+  .friday-night-img-normal,.friday-night-img-big{
+    width:260px;
+    height:390px;
+  }
+  .friday-night-title{
+    font-size:32px;
+    margin-bottom: 20px;
+  }
+  .friday-night-textbox p{
+    font-size:21px;
+  }
+}
 /* FOOTER */
 
 .footer-left,
