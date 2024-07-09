@@ -840,6 +840,10 @@ a {
   background-repeat: no-repeat;
 }
 
+.blog-more{
+  
+}
+
 @media (max-width: 1300px) {
   .friday-night-img {
     width: 100%;
