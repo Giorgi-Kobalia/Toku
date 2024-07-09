@@ -168,6 +168,16 @@
 }
 
 @media (max-width: 1000px) {
+  .meditation-img {
+    display: none;
+  }
+
+  .card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   .swiper-header {
     font-size: 36px;
   }
@@ -184,8 +194,8 @@
     font-size: smaller;
   }
   .zodiac {
-    width: 100px;
-    height: 100px;
+    width: 94px;
+    height: 94px;
     margin: 10px auto;
     font-size: 10.5px;
   }
