@@ -830,6 +830,7 @@ a {
 .footer-left {
   width: 30%;
   margin: 50px 20px;
+  text-align: center;
 }
 .footer-midl {
   width: 30%;
@@ -843,7 +844,7 @@ a {
 .footer-logo {
   height: 330px;
   background-image: url(./img/footer/footer_logo.png);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
