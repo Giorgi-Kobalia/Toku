@@ -7,6 +7,39 @@ a {
   text-decoration: none;
 }
 
+.scrollTop {
+  background-color: black;
+  width: 100%;
+  height: 60px;
+  margin-top: -5px;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  border-image: linear-gradient(
+    90deg,
+    #ff0000 0%,
+    #ffb800 20%,
+    #fff500 40%,
+    #51af66 60%,
+    #0038ff 80%,
+    #ad00ff 100%
+  );
+  border-image-slice: 1;
+  border-left: 2px solid #ff0000;
+  border-right: 2px solid #ad00ff;
+  position: fixed;
+  cursor: pointer;
+  display: none;
+  /* background-image: url(./img/nav/up-arrow.png); */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 20;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .gradient {
   border-bottom: 2px solid;
   border-image: linear-gradient(
@@ -812,53 +845,55 @@ a {
   background-repeat: no-repeat;
 }
 
-@media (max-width:1300px){
-  .friday-night-img{
+@media (max-width: 1300px) {
+  .friday-night-img {
     width: 100%;
-    height:initial;
+    height: initial;
     display: flex;
   }
-  .friday-night{
-    width:100%;
+  .friday-night {
+    width: 100%;
   }
-  .friday-night-img{
-    width:100%;
+  .friday-night-img {
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, minmax(160px,1fr));
-    gap:5px;
+    grid-template-columns: repeat(2, minmax(160px, 1fr));
+    gap: 5px;
   }
-  .friday-night-img-normal,.friday-night-img-big{
-    margin:0;
-    width:100%;
-    height:320px;
+  .friday-night-img-normal,
+  .friday-night-img-big {
+    margin: 0;
+    width: 100%;
+    height: 320px;
     flex-shrink: 0;
   }
-  .friday-night-textbox{
-    width:100%;
+  .friday-night-textbox {
+    width: 100%;
     margin-top: 25px;
-    height:initial;
+    height: initial;
   }
 }
-@media (max-width:900px){
-  .friday-night{
+@media (max-width: 900px) {
+  .friday-night {
     flex-direction: column;
   }
-  .friday-night-img{
-    width:100%;
+  .friday-night-img {
+    width: 100%;
     display: flex;
     overflow-x: auto;
-    padding-bottom:20px;
+    padding-bottom: 20px;
   }
-  .friday-night-img-normal,.friday-night-img-big{
-    width:260px;
-    height:390px;
+  .friday-night-img-normal,
+  .friday-night-img-big {
+    width: 260px;
+    height: 390px;
   }
-  .friday-night-title{
-    font-size:32px;
+  .friday-night-title {
+    font-size: 32px;
     margin-bottom: 20px;
   }
-  .friday-night-textbox p{
-    font-size:21px;
+  .friday-night-textbox p {
+    font-size: 21px;
   }
 }
 /* FOOTER */
