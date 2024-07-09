@@ -104,7 +104,8 @@ scrollTop.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 window.addEventListener("scroll", () => {
-  if (window.scrollY >= 200) {
+  console.log(window.scrollY);
+  if (window.scrollY >= 1000) {
     scrollTop.style.display = "flex";
   } else {
     scrollTop.style.display = "none";
