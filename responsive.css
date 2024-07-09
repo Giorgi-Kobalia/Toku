@@ -176,6 +176,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 110px;
+    flex-direction: column;
+  }
+  .chakra-title{
+    height: 16px;
   }
 
   .swiper-header {
