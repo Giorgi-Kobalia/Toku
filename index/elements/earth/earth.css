@@ -115,6 +115,8 @@
   margin-bottom: 20px;
   text-align: start;
   width: 100%;
+  text-align: center;
+
 }
 
 .element {
@@ -185,6 +187,7 @@
   text-align: start;
   width: 100%;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .zodiac {

@@ -21,7 +21,7 @@
   width: 100%;
   text-align: center;
   font-size: 64px;
-  color: blue;
+  color: #00adef;
   line-height: 76.8px;
   margin-bottom: 45px;
   @media (max-width: 780px) {
@@ -34,7 +34,7 @@
 .elements-left-ball {
   width: 200px;
   height: 200px;
-  background-color: blue;
+  background-color: #00adef;
   border: 1px solid transparent;
   border-radius: 50%;
   display: flex;
@@ -114,6 +114,8 @@
   margin-bottom: 20px;
   text-align: start;
   width: 100%;
+  text-align: center;
+
 }
 
 .element {
