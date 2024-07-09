@@ -99,4 +99,14 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-
+const scrollTop = document.querySelector(".scrollTop");
+scrollTop.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= 200) {
+    scrollTop.style.display = "flex";
+  } else {
+    scrollTop.style.display = "none";
+  }
+});
