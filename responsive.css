@@ -146,8 +146,9 @@
   }
 
   .wish {
-    width: 155px;
-    margin: 5;
+    font-size: 14px;
+    width: 130px;
+    margin: 5px;
   }
 
   /*  */
@@ -160,6 +161,7 @@
   }
 
   .zodiac-header-bg {
+    font-size: 20px;
     opacity: 0.5;
   }
 
