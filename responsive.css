@@ -180,6 +180,7 @@
     flex-direction: column;
   }
   .chakra-title{
+    display: none;
     height: 16px;
   }
 
