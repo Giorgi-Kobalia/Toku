@@ -1,64 +1,45 @@
 .intro {
   min-width: 320px;
   max-width: 1300px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   margin-top: 80px;
   display: flex;
   justify-content: space-between;
 }
 
 .elements-left-box {
-  margin-top: 70px;
   width: 320px;
-  max-height: 800px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
 }
 
+.zodiac {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  border: 1px solid #bfad81;
+  color: #bfad81;
+  transition: 0.7s;
+  margin: 0px auto;
+}
+
+.zodiac-img {
+  width: 30%;
+  height: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.7s;
+}
+
 .elements-right-box-title {
   width: 100%;
   text-align: center;
   font-size: 64px;
-  color: #ed000a;
+  color: #8d7a42;
   line-height: 76.8px;
-  margin-bottom: 45px;
-  @media (max-width: 780px) {
-    font-size: 40px;
-    line-height: 56.8px;
-    margin-bottom: 25px;
-  }
-}
-
-.elements-left-ball {
-  width: 200px;
-  height: 200px;
-  background-color: red;
-  border: 1px solid transparent;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.elements-left-ball-symbol {
-  width: 40%;
-  height: 40%;
-  background-image: url(../../../img/elements/fire.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-bottom: 10px;
-}
-
-.content__title {
-  width: 100%;
-  text-align: center;
-  font-size: 64px;
-  color: #ed000a;
-  line-height: 76.8px;
-  margin-bottom: 45px;
   @media (max-width: 780px) {
     font-size: 40px;
     line-height: 56.8px;
@@ -98,13 +79,8 @@
   }
 }
 
-.elements-left-box-video {
-  margin-bottom: 40px;
-}
-
 .elements-right-box {
   max-width: 800px;
-  min-height: 700px;
 }
 
 .elements-right-box-header {
@@ -116,7 +92,6 @@
   text-align: start;
   width: 100%;
   text-align: center;
-
 }
 
 .element {
@@ -186,41 +161,14 @@
   font-size: 18px;
   text-align: start;
   width: 100%;
-  margin-bottom: 20px;
   text-align: center;
-}
+  margin-bottom: 30px;
 
-.zodiac {
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  border: 1px solid #bfad81;
-  margin: 40px auto;
-  color: #bfad81;
-  transition: 0.7s;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.zodiac-img {
-  width: 30%;
-  height: 30%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-top: 10px;
-  transition: 0.7s;
-}
-
-.zodiac-title {
-  font-size: 12px;
 }
 
 .planet {
-  width: 90px;
-  height: 160px;
+  width: 160px;
+  height: 260px;
   color: #bfad81;
   margin: 25px 10px;
   display: flex;
@@ -230,9 +178,13 @@
   transition: 0.7s;
 }
 
+.wish {
+  margin: 30px auto;
+}
+
 .planet-img {
-  width: 90px;
-  height: 90px;
+  width: 160px;
+  height: 160px;
   border: 1px solid #bfad81;
   background-color: #8d7a42;
   background-position: center;
@@ -252,6 +204,7 @@
   justify-content: center;
   align-items: center;
   transition: 0.7s;
+  margin-bottom: 50px;
 }
 .small-chakra:hover {
   scale: 1.1;
@@ -289,15 +242,24 @@
   .intro {
     flex-direction: column-reverse;
   }
-  .elements-left-ball {
-    display: none;
-  }
+  .elements-left-ball,
   .element-bg {
     opacity: 1;
   }
+  .zodiac {
+    margin-bottom: 20px;
+  }
+  .planet_sign {
+    display: none;
+  }
 }
+
 @media (max-width: 1200px) {
   .element-bg {
     opacity: 1;
+  }
+
+  .wish {
+    margin: 0px 0px 30px 0px;
   }
 }
