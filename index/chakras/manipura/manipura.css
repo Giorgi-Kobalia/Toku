@@ -185,33 +185,3 @@
   margin: 50px;
 }
 
-.element-link:hover {
-  scale: 1.2;
-  .fire {
-    filter: hue-rotate(220deg);
-    border: 0px solid;
-  }
-
-  .earth {
-    filter: hue-rotate(320deg);
-    border: 0px solid;
-  }
-
-  .air {
-    filter: hue-rotate(90deg);
-    border: 0px solid;
-  }
-
-  .water {
-    filter: hue-rotate(40deg);
-    border: 0px solid;
-  }
-
-  .element-img {
-    animation: scaleImage 2s infinite linear;
-  }
-
-  .element-bg {
-    opacity: 1;
-  }
-}

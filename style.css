@@ -148,9 +148,11 @@ a {
   opacity: 0;
 }
 
-.navbar:hover {
-  .navbar-bg {
-    opacity: 0.5;
+@media all and (min-width: 1000px) {
+  .navbar:hover {
+    .navbar-bg {
+      opacity: 0.5;
+    }
   }
 }
 
@@ -176,13 +178,15 @@ a {
   margin-left: -10px;
 }
 
-.chakra:hover {
-  scale: 1.08;
+@media all and (min-width: 1000px) {
+  .chakra:hover {
+    scale: 1.08;
 
-  transition: 500ms;
+    transition: 500ms;
 
-  .charka-img {
-    animation: scaleImage 2s infinite linear;
+    .charka-img {
+      animation: scaleImage 2s infinite linear;
+    }
   }
 }
 
@@ -343,35 +347,37 @@ a {
   margin: 30px;
 }
 
-.element-link:hover {
-  scale: 1.2;
+@media all and (min-width: 1000px) {
+  .element-link:hover {
+    scale: 1.2;
 
-  .fire {
-    filter: hue-rotate(220deg);
-    border: 0px solid;
-  }
+    .fire {
+      filter: hue-rotate(220deg);
+      border: 0px solid;
+    }
 
-  .earth {
-    filter: hue-rotate(320deg);
-    border: 0px solid;
-  }
+    .earth {
+      filter: hue-rotate(320deg);
+      border: 0px solid;
+    }
 
-  .air {
-    filter: hue-rotate(90deg);
-    border: 0px solid;
-  }
+    .air {
+      filter: hue-rotate(90deg);
+      border: 0px solid;
+    }
 
-  .water {
-    filter: hue-rotate(40deg);
-    border: 0px solid;
-  }
+    .water {
+      filter: hue-rotate(40deg);
+      border: 0px solid;
+    }
 
-  .element-img {
-    animation: scaleImage 2s infinite linear;
-  }
+    .element-img {
+      animation: scaleImage 2s infinite linear;
+    }
 
-  .element-bg {
-    opacity: 1;
+    .element-bg {
+      opacity: 1;
+    }
   }
 }
 
@@ -396,10 +402,12 @@ a {
   transition: 0.5s;
 }
 
-.wish:hover {
-  scale: 1.1;
-  background-color: #bfad81;
-  color: black;
+@media all and (min-width: 1000px) {
+  .wish:hover {
+    scale: 1.1;
+    background-color: #bfad81;
+    color: black;
+  }
 }
 
 /* ZODIAC */
@@ -433,9 +441,11 @@ a {
   transition: 0.5s;
 }
 
-.zodiac-header:hover {
-  .zodiac-header-bg {
-    opacity: 0.5;
+@media all and (min-width: 1000px) {
+  .zodiac-header:hover {
+    .zodiac-header-bg {
+      opacity: 0.5;
+    }
   }
 }
 
@@ -511,10 +521,12 @@ a {
   }
 }
 
-.zodiac:hover {
-  color: black;
-  background-color: #bfad81;
-  scale: 1.1;
+@media all and (min-width: 1000px) {
+  .zodiac:hover {
+    color: black;
+    background-color: #bfad81;
+    scale: 1.1;
+  }
 
   .Aries {
     background-image: url(./img/zodiac/black/Aries-black.svg);
@@ -596,9 +608,11 @@ a {
   transition: 0.5s;
 }
 
-.planet-header:hover {
-  .planet-header-bg {
-    opacity: 0.5;
+@media all and (min-width: 1000px) {
+  .planet-header:hover {
+    .planet-header-bg {
+      opacity: 0.5;
+    }
   }
 }
 
@@ -659,39 +673,41 @@ a {
   transition: 0.7s;
 }
 
-.planet:hover {
-  scale: 1.1;
+@media all and (min-width: 1000px) {
+  .planet:hover {
+    scale: 1.1;
 
-  .Sun {
-    background-image: url(./img/planets/base/Sun-base.svg);
-  }
+    .Sun {
+      background-image: url(./img/planets/base/Sun-base.svg);
+    }
 
-  .Moon {
-    background-image: url(./img/planets/base/Moon-base.svg);
-  }
+    .Moon {
+      background-image: url(./img/planets/base/Moon-base.svg);
+    }
 
-  .Mercury {
-    background-image: url(./img/planets/base/Mercury-base.svg);
-  }
+    .Mercury {
+      background-image: url(./img/planets/base/Mercury-base.svg);
+    }
 
-  .Venus {
-    background-image: url(./img/planets/base/Venus-base.svg);
-  }
+    .Venus {
+      background-image: url(./img/planets/base/Venus-base.svg);
+    }
 
-  .Mars {
-    background-image: url(./img/planets/base/Mars-base.svg);
-  }
+    .Mars {
+      background-image: url(./img/planets/base/Mars-base.svg);
+    }
 
-  .Jupiter {
-    background-image: url(./img/planets/base/Jupiter-base.svg);
-  }
+    .Jupiter {
+      background-image: url(./img/planets/base/Jupiter-base.svg);
+    }
 
-  .Saturn {
-    background-image: url(./img/planets/base/Saturn-base.svg);
-  }
+    .Saturn {
+      background-image: url(./img/planets/base/Saturn-base.svg);
+    }
 
-  .Lilit {
-    background-image: url(./img/planets/base/lilith-base.svg);
+    .Lilit {
+      background-image: url(./img/planets/base/lilith-base.svg);
+    }
   }
 }
 
@@ -967,9 +983,11 @@ a {
   list-style: none;
 }
 
-.footer-list li:hover {
-  transition: 0.8s;
-  scale: 1.3;
+@media all and (min-width: 1000px) {
+  .footer-list li:hover {
+    transition: 0.8s;
+    scale: 1.3;
+  }
 }
 
 .footer-map {
@@ -987,4 +1005,7 @@ a {
   font-size: 24px;
   width: 100%;
   text-align: end;
+}
+
+@media all and (min-width: 1000px) {
 }

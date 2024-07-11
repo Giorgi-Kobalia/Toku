@@ -26,6 +26,7 @@
     flex-direction: row;
     margin-bottom: 5px;
   }
+  
   .chakra:hover {
     z-index: 10;
   }
