@@ -90,6 +90,7 @@
 }
 .content__tags {
   display: flex;
+  justify-content: center;
   width: 100%;
   gap: 55px;
   margin-top: 60px;
