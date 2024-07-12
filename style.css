@@ -881,10 +881,10 @@ a {
   .friday-night-img {
     width: 100%;
     display: flex;
-    overflow-x:auto;
+    overflow-x: auto;
     padding-bottom: 20px;
-    overflow-anchor:initial;
   }
+  
   .friday-night-img-normal,
   .friday-night-img-big {
     width: 260px;
