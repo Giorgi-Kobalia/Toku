@@ -38,6 +38,10 @@
     .meditation-img {
       display: none;
     }
+
+    .manipura {
+      background: linear-gradient(180deg, #feb302 1%, rgba(250, 0, 10, 0) 110%);
+    }
   }
 }
 

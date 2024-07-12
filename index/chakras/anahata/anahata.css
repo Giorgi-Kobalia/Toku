@@ -38,6 +38,9 @@
     .meditation-img {
       display: none;
     }
+    .anahata {
+      background: linear-gradient(180deg, #02a552 1%, rgba(250, 0, 10, 0) 110%);
+    }
   }
 }
 

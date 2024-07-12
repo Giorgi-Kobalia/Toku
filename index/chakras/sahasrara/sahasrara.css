@@ -38,6 +38,9 @@
     .meditation-img {
       display: none;
     }
+    .sahasrara {
+      background: linear-gradient(180deg, #a4108c 1%, rgba(250, 0, 10, 0) 110%);
+    }
   }
 }
 

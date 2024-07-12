@@ -29,7 +29,7 @@
       margin-top: 50px !important;
     }
   }
-
+  
   @media (max-width: 1200px) {
     .card {
       width: 100% !important;
@@ -37,6 +37,9 @@
     }
     .meditation-img {
       display: none;
+    }
+    .vishudha {
+      background: linear-gradient(180deg, #00adef 1%, rgba(250, 0, 10, 0) 110%);
     }
   }
 }

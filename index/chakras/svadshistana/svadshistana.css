@@ -38,6 +38,9 @@
     .meditation-img {
       display: none;
     }
+    .svadhistana {
+      background: linear-gradient(180deg, #f57200 1%, rgba(250, 0, 10, 0) 110%);
+    }
   }
 }
 

@@ -38,6 +38,9 @@
     .meditation-img {
       display: none;
     }
+    .ajna {
+      background: linear-gradient(180deg, #2e47a4 1%, rgba(250, 0, 10, 0) 110%);
+    }
   }
 }
 
