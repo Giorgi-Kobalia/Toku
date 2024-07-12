@@ -21,102 +21,16 @@
   }
 
   .all-chakras {
-    flex-direction: column-reverse;
-    padding-bottom: 30px;
+    height: 600px;
   }
-
+  
   .chakra {
-    width: 90%;
-    height: auto;
-    flex-direction: row;
-    margin-bottom: 5px;
-  }
-
-  .chakra:hover {
-    z-index: 10;
-  }
-
-  .card {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    border-radius: 0px;
-    margin: 0px;
-  }
-
-  .card span {
-    font-size: 16px;
+    height: 560px;
   }
 
   .card-ball {
     display: none;
   }
-
-  .card div {
-    width: 33%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .card-ball span {
-    font-size: 14px;
-  }
-
-  .charka-img {
-    width: 33%;
-    height: 60%;
-  }
-
-  .meditation-img {
-    width: 60px;
-    height: 60px;
-    margin: auto;
-  }
-
-  .chakra-title {
-    width: 33%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /*  */
-  .muladhara {
-    border-radius: 0px 0px 200px 200px;
-    background: linear-gradient(-90deg, #eb040c 35%, rgba(250, 0, 10, 0) 100%);
-  }
-
-  .svadhistana {
-    background: linear-gradient(-90deg, #f57200 35%, rgba(250, 0, 10, 0) 100%);
-  }
-
-  .manipura {
-    background: linear-gradient(-90deg, #feb302 35%, rgba(250, 0, 10, 0) 100%);
-  }
-
-  .anahata {
-    background: linear-gradient(-90deg, #02a552 35%, rgba(250, 0, 10, 0) 100%);
-  }
-
-  .vishudha {
-    background: linear-gradient(-90deg, #00adef 35%, rgba(250, 0, 10, 0) 100%);
-  }
-
-  .ajna {
-    background: linear-gradient(-90deg, #2e47a4 35%, rgba(250, 0, 10, 0) 100%);
-  }
-
-  .sahasrara {
-    border-radius: 200px 200px 0px 0px;
-    background: linear-gradient(-90deg, #a4108c 35%, rgba(250, 0, 10, 0) 100%);
-  }
-
-  /*  */
 
   .element-link {
     margin: 20px;
@@ -175,24 +89,8 @@
 }
 
 @media (max-width: 1000px) {
-  .meditation-img {
-    display: none;
-  }
-
   .nav-link {
     font-size: 16px;
-  }
-
-  .card {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 110px;
-    flex-direction: column;
-  }
-  .chakra-title {
-    display: none;
-    height: 16px;
   }
 
   .swiper-header {
