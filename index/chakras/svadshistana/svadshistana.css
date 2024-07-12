@@ -29,6 +29,16 @@
       margin-top: 50px !important;
     }
   }
+
+  @media (max-width: 1200px) {
+    .card {
+      width: 100% !important;
+      height: 120px !important;
+    }
+    .meditation-img {
+      display: none;
+    }
+  }
 }
 
 .content__body {
