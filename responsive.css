@@ -175,6 +175,10 @@
     display: none;
   }
 
+  .nav-link{
+    font-size: 16px;
+  }
+
   .card{
     display: flex;
     justify-content: space-around;

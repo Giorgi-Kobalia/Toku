@@ -107,7 +107,8 @@ scrollTop.addEventListener("click", () => {
 
 const scrollVisibility = () => {
   if (window.scrollY >= 1000) {
-    scrollTop.style.display = "flex";
+    console.log(1);
+    scrollTop.style.display = "block";
   } else {
     scrollTop.style.display = "none";
   }
