@@ -55,6 +55,7 @@ a {
 }
 
 .navbar {
+  height: 60px;
   margin-top: 5px;
   margin-bottom: 50px;
   border-bottom: 2px solid black;
@@ -388,6 +389,9 @@ a {
   justify-content: center;
   align-items: center;
   transition: 0.5s;
+}
+.more {
+  margin-bottom: 80px;
 }
 
 @media all and (min-width: 1000px) {
@@ -792,6 +796,7 @@ a {
   display: table;
   margin-top: 45px;
 }
+
 .friday-night-textbox {
   width: 620px;
   height: 950px;
@@ -848,17 +853,14 @@ a {
   .friday-night-img {
     width: 100%;
     height: initial;
-    display: flex;
-  }
-  .friday-night {
-    width: 100%;
-  }
-  .friday-night-img {
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, minmax(160px, 1fr));
     gap: 5px;
   }
+  .friday-night {
+    width: 100%;
+  }
+
   .friday-night-img-normal,
   .friday-night-img-big {
     margin: 0;
@@ -879,8 +881,9 @@ a {
   .friday-night-img {
     width: 100%;
     display: flex;
-    overflow-x: auto;
+    overflow-x:auto;
     padding-bottom: 20px;
+    overflow-anchor:initial;
   }
   .friday-night-img-normal,
   .friday-night-img-big {

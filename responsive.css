@@ -3,8 +3,13 @@
     margin-top: 5px;
     padding: 5px 0px 5px 0px;
     margin-bottom: 40px;
+    height: auto;
   }
 
+  .scrollTop {
+    background-position: 60px center;
+    background-size: 38px;
+  }
   .navbar-brand {
     margin: 0;
   }
@@ -148,7 +153,6 @@
   .wish {
     font-size: 14px;
     width: 130px;
-    margin: 5px;
   }
 
   /*  */
