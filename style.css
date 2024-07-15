@@ -73,7 +73,7 @@ a {
   border-left: 2px solid #ff0000;
   border-right: 2px solid #ad00ff;
   position: sticky;
-  top: 0px;
+  top: -1px;
   overflow: hidden;
 
   .nav-title {
