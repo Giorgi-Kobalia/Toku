@@ -193,16 +193,6 @@
   z-index: -1;
 }
 
-.scrollTop {
-  height: 38px;
-  top: 0px;
-  display: none;
-  z-index: 20;
-  background-image: url(../../../img/nav/swipe-up.png);
-  background-position: 100px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
 
 .element-link {
   transition: 0.5s;

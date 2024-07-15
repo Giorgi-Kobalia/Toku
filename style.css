@@ -9,6 +9,7 @@ a {
 }
 
 .scrollTop {
+  width: 38px;
   height: 38px;
   top: 0px;
   display: none;
@@ -16,6 +17,7 @@ a {
   background-image: url(./img/nav/swipe-up.png);
   background-position: 100px;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
 }
 
