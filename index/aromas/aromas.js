@@ -1,4 +1,4 @@
-const allCrystals = document.querySelector(".aromas");
+const allAromas = document.querySelector(".aromas");
 
 const aromas = [
   {
@@ -134,5 +134,5 @@ for (let index = 0; index < aromas.length; index++) {
            <div class="aroma_title">${element.title}</div>
         </div>
     `;
-  allCrystals.innerHTML += template;
+    allAromas.innerHTML += template;
 }

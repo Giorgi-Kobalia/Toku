@@ -131,6 +131,6 @@ for (let index = 0; index < tarots.length; index++) {
 
         </div>
     `;
-  console.log("dsa");
+ 
   allTarots.innerHTML += template;
 }
