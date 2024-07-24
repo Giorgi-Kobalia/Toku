@@ -2,6 +2,8 @@
   width: 100%;
   text-align: start;
   color: white;
+  overflow-y: auto;
+  max-height: calc(86vh - 124px);
 }
 
 .close {
@@ -13,7 +15,7 @@
 .desc_desc {
   min-width: 320px;
   max-width: 1400px;
-  top: 115px;
+  top: calc(50% + 20px);
   left: 50%;
   z-index: 10;
   display: none;
@@ -21,6 +23,10 @@
   padding: 20px;
   border: 1px solid aqua;
   border-radius: 20px;
+  position: fixed;
+  z-index: 99999;
+  background: black;
+  transform: translate(-50%, -50%);
 }
 
 .crystals {
