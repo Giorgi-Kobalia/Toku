@@ -635,8 +635,9 @@ more.forEach((more, index) => {
     test.innerHTML = html;
     desc_desc.style.display = "flex";
     allCrystals.style.opacity = "0";
-
+    test.scrollTop = 0;
     document.body.style.overflow = "hidden";
+    desc_desc.style.overflow = "auto";
   });
 });
 
@@ -645,6 +646,6 @@ close.addEventListener("click", () => {
   test.innerHTML = "";
   desc_desc.style.display = "none";
   allCrystals.style.opacity = "100";
-
   document.body.style.overflow = "";
+  esc_desc.style.overflow = "";
 });
