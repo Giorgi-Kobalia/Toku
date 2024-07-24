@@ -565,9 +565,6 @@ const crystals = [
         aghwera: ` ეს ხელს უწყობს ემოციურ წონასწორობას, სტაბილურობას და კომფორტს. `,
       },
 
-
-
-
       {
         satauri: ` აღწერა `,
         aghwera: ` ავენტურინი არის კვარცის ფორმა, რომელიც ხასიათდება მისი მწვანედან მოლურჯო-მომწვანო შეფერილობით და პაწაწინა მეტალის ჩანართების არსებობით, რომლებიც ქმნიან ცქრიალა ან მოციმციმე ეფექტს, რომელიც ცნობილია როგორც . ეს არის პოპულარული და მრავალმხრივი ძვირფასი ქვა, რომელიც გამოიყენება სხვადასხვა სახის სამკაულებსა და ჩუქურთმებში. `,
@@ -608,7 +605,6 @@ const crystals = [
         satauri: ` ემოციური კეთილდღეობა  `,
         aghwera: ` ეს ხელს უწყობს ემოციურ წონასწორობას, სტაბილურობას და კომფორტს. `,
       },
-
     ],
   },
 ];
@@ -638,12 +634,9 @@ more.forEach((more, index) => {
 
     test.innerHTML = html;
     desc_desc.style.display = "flex";
-    allCrystals.style.opacity = '0'
+    allCrystals.style.opacity = "0";
 
     document.body.style.overflow = "hidden";
-    document.body.addEventListener("touchmove", preventDefault, {
-      passive: false,
-    });
   });
 });
 
@@ -651,12 +644,7 @@ const close = document.querySelector(".close");
 close.addEventListener("click", () => {
   test.innerHTML = "";
   desc_desc.style.display = "none";
-  allCrystals.style.opacity = '100'
+  allCrystals.style.opacity = "100";
 
   document.body.style.overflow = "";
-  document.body.removeEventListener("touchmove", preventDefault);
 });
-
-function preventDefault(e) {
-  e.preventDefault();
-}
